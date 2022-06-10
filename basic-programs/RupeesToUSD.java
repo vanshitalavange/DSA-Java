@@ -1,4 +1,4 @@
-// 06. Input currency in rupees and output in USD.
+// Q. Input currency in rupees and output in USD.
 
 import java.util.Scanner;
 

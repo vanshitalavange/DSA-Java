@@ -1,4 +1,4 @@
-// 08. To find out whether the given String is Palindrome or not.
+// Q. To find out whether the given String is Palindrome or not.
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-// 09. To find Armstrong Number between two given number.
+// Q. To find Armstrong Number between two given number.
 
 import java.util.Scanner;
 

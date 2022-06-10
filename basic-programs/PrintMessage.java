@@ -1,5 +1,5 @@
 
-// 02. Take name as input and print a greeting message for that particular name.
+// Q. Take name as input and print a greeting message for that particular name.
 import java.util.Scanner;
 
 public class PrintMessage {

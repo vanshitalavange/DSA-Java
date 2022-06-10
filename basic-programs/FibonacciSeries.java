@@ -1,4 +1,4 @@
-// 07. To calculate Fibonacci Series up to n numbers.
+// Q. To calculate Fibonacci Series up to n numbers.
 
 import java.util.Scanner;
 

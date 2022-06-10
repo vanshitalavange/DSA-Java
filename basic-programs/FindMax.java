@@ -1,5 +1,5 @@
 
-// 05. Take 2 numbers as input and print the largest number.
+// Q. Take 2 numbers as input and print the largest number.
 import java.util.Scanner;
 
 public class FindMax {

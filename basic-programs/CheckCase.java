@@ -1,5 +1,5 @@
 
-// 10. Check case of the entered string 
+// Q. Check case of the entered string 
 import java.util.Scanner;
 
 public class CheckCase {
