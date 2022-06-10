@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class CurrencyToUSD {
+public class RupeesToUSD {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter currency in rupees: ");
