@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "conditionals-loops"
+        "conditionals-loops/basic-programs",
+        "basic-programs",
+        "conditionals-loops/intermediate-programs"
     ]
 }
