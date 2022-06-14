@@ -1,3 +1,5 @@
+// Q. Define a program to find out whether a given number is even or odd.
+
 package functions;
 
 import java.util.Scanner;
