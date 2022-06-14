@@ -17,9 +17,9 @@ public class ArrayFromPermutation {
         for (int i = 0; i < arrayLength; i++) {
             nums[i] = input.nextInt();
         }
-        System.out.println(Arrays.toString(nums));
+        System.out.println("Input: " + Arrays.toString(nums));
         int[] finalArray = buildArray(nums);
-        System.out.println(Arrays.toString(finalArray));
+        System.out.println("Output: " + Arrays.toString(finalArray));
 
     }
 
