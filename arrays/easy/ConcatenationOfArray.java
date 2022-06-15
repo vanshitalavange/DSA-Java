@@ -5,7 +5,7 @@ Specifically, ans is the concatenation of two nums arrays.
 Input: nums = [1,2,1]
 Output: [1,2,1,1,2,1]
 */
-package arrays;
+package arrays.easy;
 
 import java.util.Arrays;
 import java.util.Scanner;

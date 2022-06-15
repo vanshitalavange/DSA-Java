@@ -4,7 +4,7 @@ A pair (i, j) is called good if nums[i] == nums[j] and i < j.
 Input: nums = [1,2,3,1,1,3]
 Output: 4
  */
-package arrays;
+package arrays.easy;
 import java.util.Arrays;
 
 public class NumberOfGoodPairs {

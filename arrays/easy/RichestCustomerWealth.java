@@ -3,7 +3,7 @@ Q. You are given an m x n integer grid accounts where accounts[i][j] is the amou
 Input: accounts = [[1,2,3],[3,2,1]]
 Output: 6
  */
-package arrays;
+package arrays.easy;
 
 import java.util.Arrays;
 

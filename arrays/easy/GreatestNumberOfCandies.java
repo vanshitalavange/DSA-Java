@@ -5,7 +5,7 @@ Note that multiple kids can have the greatest number of candies.
 Input: candies = [2,3,5,1,3], extraCandies = 3
 Output: [true,true,true,false,true] 
  */
-package arrays;
+package arrays.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
