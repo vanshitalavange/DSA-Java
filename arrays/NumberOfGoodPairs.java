@@ -4,7 +4,6 @@ import java.util.Arrays;
 public class NumberOfGoodPairs {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1,1,3};
-        int count = 0;
         System.out.println("Input: "+Arrays.toString(nums));
         System.out.println("Output: "+numIdenticalPairs(nums));
     }
