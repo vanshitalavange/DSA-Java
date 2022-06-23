@@ -15,11 +15,11 @@ public class SearchForTarget {
         ;
         System.out.println("Enter element to be searched: ");
         int target = input.nextInt();
-        int index = searchElement(arr, target);
+        int index = orderAgnosticBS(arr, target);
         System.out.println("Target element index: " + index);
     }
 
-    public static int searchElement(int[] arr, int target) {
+    public static int orderAgnosticBS(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
         boolean ascending = arr[start] < arr[end];
