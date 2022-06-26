@@ -1,3 +1,4 @@
+// Question link: https://leetcode.com/problems/search-in-rotated-sorted-array/
 package searching.binary_search;
 
 public class SearchInRotatedArray {
@@ -5,13 +6,14 @@ public class SearchInRotatedArray {
         int[] arr = { 4, 5, 6, 7, 8, 9, 0, 1, 2 };
         int target = 0;
         int pivot = findPivot(arr, target);
-        int onLeft = binarySearch(arr, target, 0, pivot, true);
-        if(onLeft != -1){
-            System.out.println("Output: "+onLeft);
-        }else{
-            System.out.println("Output: "+binarySearch(arr, target, pivot + 1, arr.length - 1, true));
+        if (arr[pivot] == target) {
+            System.out.println("Output: " + pivot);
+        } else if (target > arr[0]) {
+            int onLeft = binarySearch(arr, target, 0, pivot - 1, true);
+            System.out.println("Output: " + onLeft);
+        } else {
+            System.out.println("Output: " + binarySearch(arr, target, pivot + 1, arr.length - 1, true));
         }
-
     }
 
     public static int findPivot(int[] arr, int target) {
@@ -31,6 +33,7 @@ public class SearchInRotatedArray {
         }
         return -1;
     }
+
     public static int binarySearch(int[] nums, int target, int start, int end, boolean isAsc) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
