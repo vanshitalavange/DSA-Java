@@ -1,5 +1,5 @@
 // Q. Question link: https://leetcode.com/problems/search-a-2d-matrix-ii/
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class SearchIn2DII {
     public static void main(String[] args) {

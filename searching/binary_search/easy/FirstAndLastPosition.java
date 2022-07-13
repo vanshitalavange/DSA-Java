@@ -1,6 +1,6 @@
 // Question link:https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 // facebook interview question
-package searching.binary_search;
+package searching.binary_search.easy;
 
 import java.util.Arrays;
 

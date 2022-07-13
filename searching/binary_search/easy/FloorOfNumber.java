@@ -1,10 +1,10 @@
 // Q. Find the greatest element in the array <= target
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class FloorOfNumber {
     public static void main(String[] args) {
         int[] arr = { 18, 15, 12, 10, 9, 7, 5, 3 };
-        int target = 14;
+        int target = 2;
         System.out.println("Output: " + findFloor(arr, target));
     }
     static int findFloor(int[] arr, int target){

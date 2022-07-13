@@ -1,5 +1,5 @@
 // Question link: https://leetcode.com/problems/search-in-rotated-sorted-array/
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class SearchInRotatedArray {
     public static void main(String[] args) {

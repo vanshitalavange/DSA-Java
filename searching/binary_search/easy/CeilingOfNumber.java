@@ -1,5 +1,5 @@
 // Q. Find the smallest element in the array >= target 
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class CeilingOfNumber {
     public static void main(String[] args) {

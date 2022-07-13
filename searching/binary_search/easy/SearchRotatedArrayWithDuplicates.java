@@ -1,5 +1,5 @@
 // Question link: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/ 
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class SearchRotatedArrayWithDuplicates {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 // Question link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-package searching.binary_search;
+package searching.binary_search.easy;
 import java.util.*;
 public class TwoSumII {
 public static void main(String[] args) {

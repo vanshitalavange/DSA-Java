@@ -1,5 +1,5 @@
 // Question link: https://leetcode.com/problems/valid-perfect-square/
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class IsPerfectSquare {
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 // Question link: https://practice.geeksforgeeks.org/problems/rotation4723/1/
-package searching.binary_search;
+package searching.binary_search.easy;
 
 public class RotationCount {
     public static void main(String[] args) {
