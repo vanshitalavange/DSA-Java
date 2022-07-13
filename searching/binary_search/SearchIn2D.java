@@ -1,4 +1,4 @@
-// Q. Binary search in 2D array
+// Q. Binary search in 2D array (GFG version)
 package searching.binary_search;
 
 import java.util.*;
