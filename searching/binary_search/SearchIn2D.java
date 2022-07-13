@@ -1,32 +1,34 @@
-// Q. Binary search in 2D array (GFG version)
+// Question link: https://leetcode.com/problems/search-a-2d-matrix/submissions/
 package searching.binary_search;
-
-import java.util.*;
 
 public class SearchIn2D {
     public static void main(String[] args) {
-        int[][] arr = {
-                { 10, 20, 30, 40 },
-                { 15, 25, 35, 45 },
-                { 28, 29, 37, 49 },
-                { 33, 34, 38, 50 }
+        int[][] matrix = {
+            {1},
+            {3}
         };
-        int target = 38;
-        System.out.println(Arrays.toString(search(arr, target)));
+        int target = 2;
+        boolean ans = searchMatrix(matrix,target);
+        System.out.println("Output="+ans);
     }
 
-    public static int[] search(int[][] arr, int target) {
-        int row = 0;
-        int col = arr[0].length - 1;
-        while (row < arr.length && col >= 0) {
-            if (arr[row][col] == target) {
-                return new int[] { row, col };
-            } else if (arr[row][col] > target) {
-                col--;
-            } else {
-                row++;
-            }
+public static boolean searchMatrix(int[][] matrix, int target) {
+    int rows = matrix.length;
+    int cols = matrix[0].length;
+    int start = 0;
+    int end = (rows*cols) - 1;
+    while(start <= end){
+        int mid = start + (end-start)/2;
+        int rowIndex = mid/cols;
+        int colIndex = mid%cols;
+        if(target == matrix[rowIndex][colIndex]){
+            return true;
+        }else if(target < matrix[rowIndex][colIndex]){
+            end = mid - 1;
+        }else{
+            start = mid + 1;
         }
-        return new int[] { -1, -1 };
     }
+    return false;
+}
 }
