@@ -1,3 +1,4 @@
+// Question link: https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
 package arrays.easy;
 
 import java.util.*;
@@ -18,34 +19,38 @@ public class MatrixRotation {
     }
 
     public static boolean findRotation(int[][] mat, int[][] target) {
-        int m = mat.length;
-        int start = 0;
-        int end = m - 1;
-        while (start <= end) {
-            int[] temp = mat[start];
-            mat[start] = mat[end];
-            mat[end] = temp;
-            start++;
-            end--;
+        int n = mat.length;
+        int[][] ans = new int[n][n];
+        for (int i = 0; i < mat.length; i++){
+          for (int j = 0; j < mat.length; j++){
+              ans[i][j] = mat[i][j];
+          }
         }
-        return Arrays.deepEquals(mat, target);
-    }
+        
+        for(int k=0;k<4;k++){
+            int row = 0;
+            int col = mat.length - 1;
+            
+            for(int i=0;i<mat.length;i++){
+                row = 0;
+                for(int j=0;j<mat.length;j++){
+                    ans[row][col] = mat[i][j];
+                    row++;
+                }
+                col--;
+            }
+            if(Arrays.deepEquals(ans, target)){
+                return true;
+            }else{
+                for (int i = 0; i < mat.length; i++){
+                for (int j = 0; j < mat.length; j++){
+                  mat[i][j] = ans[i][j];
+                }
+             }   
+            }
+            
+        }
+        return false;
+        
+      }
 }
-
-// int m = mat.length;
-// int[][] checkArray = new int[m][m];
-// int row = 0;
-// int count = 0;
-// for(int i=m-1;i>=0;i--){
-// for(int j=0;j<mat[i].length;j++){
-// checkArray[row][j] = mat[i][j];
-// if(checkArray[row][j] == target[row][j]){
-// count++;
-// }
-// }
-// row++;
-// }
-// if(count/mat.length == target.length){
-// return true;
-// }
-// return false;
