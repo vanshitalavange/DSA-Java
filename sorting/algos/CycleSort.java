@@ -1,5 +1,5 @@
 // Use cycle sort only if given numbers are from 1 to N
-package sorting;
+package sorting.algos;
 
 import java.util.Arrays;
 
