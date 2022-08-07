@@ -1,3 +1,4 @@
+// intuition: take sub-arrays and sort them among themselves and keep expanding the size of the subarray
 package sorting;
 
 import java.util.Arrays;
