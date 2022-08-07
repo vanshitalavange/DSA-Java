@@ -1,4 +1,5 @@
 // select an element and put it at it's correct index
+// select max/min and put at the correct index
 package sorting;
 
 import java.util.*;
