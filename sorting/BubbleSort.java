@@ -1,3 +1,4 @@
+// bubble sort checks for the order between adjacent elements and replaces them accordingly
 package sorting;
 import java.util.*;
 public class BubbleSort {
