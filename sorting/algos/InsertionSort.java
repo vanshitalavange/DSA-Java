@@ -1,5 +1,5 @@
+// intuition: take sub-arrays and sort them among themselves and keep expanding the size of the subarray
 package sorting.algos;
-
 import java.util.Arrays;
 
 public class InsertionSort {

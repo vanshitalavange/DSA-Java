@@ -1,7 +1,7 @@
 // Use cycle sort only if given numbers are from 1 to N
+// intuition: take sub-arrays and sort them among themselves and keep expanding the size of the subarray
 package sorting.algos;
-
-import java.util.Arrays;
+import java.util.*;
 
 public class CycleSort {
     public static void main(String[] args) {

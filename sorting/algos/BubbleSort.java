@@ -1,5 +1,8 @@
+
+// bubble sort checks for the order between adjacent elements and replaces them accordingly
 package sorting.algos;
 import java.util.*;
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {5,4,2,3,3,1};
