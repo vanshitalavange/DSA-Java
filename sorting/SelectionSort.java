@@ -1,3 +1,4 @@
+// select an element and put it at it's correct index
 package sorting;
 
 import java.util.*;
