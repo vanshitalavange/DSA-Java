@@ -12,6 +12,7 @@ public class KthMex {
     public static int kthMex(int n, int k, int arr[]) {
       
         boolean containsZero = false;
+        // using cyclic sort
         int i = 0;
         while (i < arr.length) {
 
