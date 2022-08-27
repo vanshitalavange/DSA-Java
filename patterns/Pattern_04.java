@@ -6,6 +6,7 @@
     1 2 3 4 5
     
 */
+package patterns;
 class Pattern_04 {
     public static void main(String[] args) {
         pattern4(5);

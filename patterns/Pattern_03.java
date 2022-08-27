@@ -7,6 +7,7 @@
 *
 
 */
+package patterns;
 class Pattern_03 {
     public static void main(String[] args) {
        pattern3(5);
