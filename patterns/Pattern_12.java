@@ -22,27 +22,18 @@ public class Pattern_12 {
     static void pattern12(int n) {
 
         for (int i = 1; i <= n * 2; i++) {
-
+            int startPos = 0;
             if (i <= n) {
-
-                for (int j = 1; j <= n; j++) {
-
-                    if (j >= i) {
-                        System.out.print("* ");
-                    } else {
-                        System.out.print(" ");
-                    }
-                }
-
+                startPos = i;
             } else {
+                startPos = n - ((i - n) - 1);
+            }
+            for (int j = 1; j <= n; j++) {
 
-                for (int j = 1; j <= n; j++) {
-                   
-                    if(j >= n-((i-n)-1)){
-                        System.out.print("* ");
-                    }else{
-                        System.out.print(" ");
-                    }
+                if (j >= startPos) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print(" ");
                 }
             }
 
