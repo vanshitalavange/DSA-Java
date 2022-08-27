@@ -16,20 +16,16 @@ class Pattern_09 {
 
     static void pattern9(int n) {
         
-        int decrementValue = 0;
         for (int i = 1; i <= n; i++) {
-            int stars = n+(n-1) - decrementValue;
-            for (int j = 1; j <= n + n - 1; j++) {
-                if (j >= i) {
-                    while(stars > 0){
-                        System.out.print("*");
-                        stars--;
-                    }
+
+            for (int j = 1; j <= (n + (n - 1)) - (i-1); j++) {
+                
+                if(j >= i){
+                    System.out.print("*");
                 }else{
                     System.out.print(" ");
                 }
             }
-            decrementValue += 2;
             System.out.println();
         }
     }
