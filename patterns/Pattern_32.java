@@ -1,3 +1,12 @@
+/*
+
+E 
+D E
+C D E
+B C D E
+A B C D E
+
+ */
 package patterns;
 
 public class Pattern_32 {
