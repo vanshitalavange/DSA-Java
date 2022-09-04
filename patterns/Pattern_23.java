@@ -21,7 +21,6 @@ public class Pattern_23 {
     static void pattern23(int n) {
         int blanks = 5 + (n - 1) * 4;
         int start = 3;
-        int end = blanks - 2;
         for (int i = 1; i <= 3; i++) {
             int temp = start + 0;
             for (int j = 1; j <= blanks; j++) {
@@ -49,7 +48,6 @@ public class Pattern_23 {
                 }
             }
             start--;
-            end++;
             System.out.println();
         }
     }
