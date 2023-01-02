@@ -4,5 +4,6 @@
         "basic-programs",
         "conditionals-loops/intermediate-programs",
         "."
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

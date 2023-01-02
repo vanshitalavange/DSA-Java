@@ -10,7 +10,7 @@ public class LevelOneQuestions {
         System.out.println(sumOfN(3));
         System.out.println(sumOfDigits(1342));
         System.out.println(reverseNumber(1342));
-        System.out.println(reverseNumber2(1278,0));
+        System.out.println(reverseNumber2(1278, 0));
         System.out.println(isNumberPalindrome(112));
         System.out.println(countZerosInNumber(102010));
         System.out.println(numberOfSteps(14));
@@ -64,36 +64,28 @@ public class LevelOneQuestions {
 
     // 6. sum of actual digits in the number eg. sum(123) = 6
     static int sumOfDigits(int n) {
-        if (n / 10 == 0) {
+        if (n / 10 == 0) { // n/10 == 0 represents that this digit is the last one to be added
             return n % 10;
         }
         return (n % 10) + sumOfDigits(n / 10);
     }
 
     // 7.1 reverse of a number method 1
-    static int reverseNumber(int n) {
-        if (n % 10 == n) {
-            return n;
-        }
-        int digits = (int) (Math.log10(n) + 1);
-        return helper(n, digits);
-    }
-
-    static int helper(int n, int digits) {
-        if (n % 10 == n) {
-            // last digit
-            return n;
-        }
-        return (n % 10) * (int) Math.pow(10, digits - 1) + helper(n / 10, digits - 1);
-    }
-
-    // 7.2 reverse of a number method 2
     static int reverseNumber2(int n, int ans) {
         if (n == 0) {
             return ans;
         }
         ans = ans * 10 + (n % 10);
         return reverseNumber2(n / 10, ans);
+    }
+
+    // 7.2 reverse of a number method 2
+    static int reverseNumber(int n) {
+        if (n / 10 == 0) {
+            return n % 10;
+        }
+        int digits = (int) (Math.log10(n) + 1);
+        return (n % 10) * (int) Math.pow(10, digits - 1) + reverseNumber(n / 10);
     }
 
     // 8. check if a number is palindromic or not
@@ -132,21 +124,22 @@ public class LevelOneQuestions {
         return helperForCountingZeros(n / 10, count);
     }
 
-    //10. Number of steps to reduce the number to zero
-    //leetcode question link: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
+    // 10. Number of steps to reduce the number to zero
+    // leetcode question link:
+    // https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
     public static int numberOfSteps(int num) {
-        return helperforCountingSteps(num,0);
+        return helperforCountingSteps(num, 0);
     }
 
-    public static int helperforCountingSteps(int n, int steps){
-        if(n == 0){
+    public static int helperforCountingSteps(int n, int steps) {
+        if (n == 0) {
             return steps;
         }
 
-        if(n % 2 == 0)
-            return helper(n/2,steps+1);
+        if (n % 2 == 0)
+            return helperforCountingSteps(n / 2, steps + 1);
         else
-            return helper(n-1,steps+1);
+            return helperforCountingSteps(n - 1, steps + 1);
     }
 
 }
